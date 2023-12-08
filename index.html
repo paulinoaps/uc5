@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Storage - Soluções em Armazenamento</title>
+  <link rel="shortcut icon" href="Imagens/BigBox.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  
+</head>
+
+<body>
+  <div id="header" class="row" alt="Cabeçalho">
+    <div id="headerImage" class="col-md-1">
+      <img id="bigBox" src="/Imagens/BigBox.png" alt="Big Box">
+    </div>
+    <div id="headerText" class="col-md-6" style="text-align: center;">
+      <h2 class="titulo">Big Storage</h2>
+      <h5>As melhores soluções de armazenamento seguro.</h5>
+    </div>
+    <div class="menuFooter" style="width: 100%; display: flex; justify-content: center; align-items: center; text-align: center;">
+      <div  class="about"><a href="#aboutus" >Início</a></div>
+      <div  class="produtos"><a href="#meuVideo" >Produtos</a></div>
+      <div  class="depoimentos"><a href="#depoimentos" >Depoimentos</a></div>
+      <div  class="contato"><a href="#localizacao" >Contate-nos</a></div>
+    </div>
+  </div>
+  <p class="mensagem" hidden>**Não há suporte para este tamanho de tela**</p>
+  <div class="container" alt="Sobre Nós" id="aboutus" style="text-align: center; margin-bottom: 40px;">
+    <h2>Sobre Nós</h2>
+    <p style="text-align: left; text-indent: 50px;">Somos a solução mais confiável de armazenamento em Salto, São Paulo.
+      Desde nossa fundação em
+      2023, temos o compromisso de fornecer espaços de armazenamento seguros e acessíveis, facilitando a vida
+      de indivíduos e empresas em nossa comunidade.
+    </p>
+  </div>
+  <div id="aboutus2" class="container" alt="Sobre Nós" style="text-align: center;">
+    <h2>Sobre Nós</h2>
+    <p style="text-align: left; text-indent: 50px;">Somos a solução mais confiável de armazenamento em Salto, São Paulo.
+      Desde nossa fundação em
+      2023, temos o compromisso de fornecer espaços de armazenamento seguros e acessíveis, facilitando a vida
+      de indivíduos e empresas em nossa comunidade.
+    </p>
+  </div>
+  <div class="container" alt="Nosso Serviço" style="text-align: center;">
+    <h2>O que oferecemos?</h2>
+    <p style="text-align: left; text-indent: 50px;" id="produtos">Trabalhamos com "Self storage". É um serviço que
+      oferece espaços de armazenamento,
+      geralmente em forma de pequenos a grandes compartimentos, boxes ou contêineres, para
+      que pessoas ou empresas possam guardar seus pertences. Estes espaços são seguros,
+      limpos e privativos. É uma solução prática para quem precisa de espaço extra para armazenar
+      itens que não cabem em casa ou no escritório, como móveis, documentos, estoque de mercadorias,
+      entre outros. Os clientes alugam o espaço pelo tempo que precisarem, pagando uma taxa
+      periódica pelo uso.
+    </p>
+    <video id="meuVideo" width="100%" height="300px">
+      <source src="selfstorage.mp4" type="video/mp4">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+  </div>
+  <div class="container" alt="Nossos Produtos" style="margin-bottom: 20px; text-align: center;">
+    <div class="row" style="margin-bottom: 10px;">
+      <h2>Nossos Produtos</h2>
+    </div>
+  </div>
+  <div class="row"
+    style="justify-content: space-around; background-color:rgba(255, 255, 255, 0.341); padding: 5px; width: 102%; margin-bottom: 30px;">
+    <div width="100%" style="text-align: center;">
+      <h3>Tipos e Tamanhos</h3>
+    </div>
+
+    <div class="col-2">
+      <button id="btnProdutoPP" class="btnBox"
+        style="background-color: rgb(0, 196, 250);">
+        <div>
+          <h3>BOX PP</h3>
+          <p>1 a 5m<sup>2</sup></p>
+        </div>
+      </button>
+    </div>
+    <div class="col-2">
+      <button id="btnProdutoP" class="btnBox"
+        style="background-color: rgb(23, 191, 1);">
+        <div>
+          <h3>BOX P</h3>
+          <p>5 a 10m<sup>2</sup></p>
+        </div>
+      </button>
+    </div>
+    <div class="col-2">
+      <button id="btnProdutoM" class="btnBox"
+        style="background-color: orange;">
+        <div>
+          <h3>BOX M</h3>
+          <p>10 a 15m<sup>2</sup></p>
+        </div>
+      </button>
+    </div>
+    <div class="col-2">
+      <button id="btnProdutoG" class="btnBox"
+        style="background-color: rgb(47, 0, 255);">
+        <div>
+          <h3>BOX G</h3>
+          <p>15 a 20m<sup>2</sup></p>
+        </div>
+      </button>
+    </div>
+    <div class="row" style="justify-content: center; align-items: center; text-align: center;" id="boxhidden">
+      <button class="btnBox"
+        style="background-color: rgb(47, 0, 255);">
+        <div>
+          <h3>BOXES</h3>
+          <p>de 1 a 20m<sup>2</sup></p>
+        </div>
+      </button>
+    </div>
+    <div id="popup" class="popup" style="color: black; border-radius: 20px;">
+      <div class="popup-content">
+        <span class="close" id="closeBtn">&times;</span>
+        <h5>FAÇA UM ORÇAMENTO AGORA E GARANTA ECONOMIA E SEGURANÇA</h5>
+        <form id="home" name="home" autocomplete="off">
+          <div class="form-row">
+            <div class="form-group col-12">
+              <input id="firstName" name="firstName" aria-label="Nome" class="form-control" type="text"
+                placeholder="Nome *" autocomplete="off">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-12">
+              <div class="form-group col-lg-6">
+                <input id="email" name="email" aria-label="Email" class="form-control" type="text" placeholder="Email *"
+                  autocomplete="off">
+              </div>
+              <div class="form-group col-lg-6">
+                <input id="phone" name="phone" aria-label="Telefone" class="form-control" type="tel"
+                  placeholder="DDD + WhatsApp *" autocomplete="off" maxlength="15">
+              </div>
+            </div>
+            <div class="form-group col-lg-6">
+              <select aria-label="rentTarget" id="enumRentTarget" name="enumRentTarget" class="ga-select form-control">
+                <option selected="" value="">Espaço destinado à... *</option>
+                <option value="Personal">Você</option>
+                <option value="Company">Empresa</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-6">
+              <select aria-label="rentTarget" id="enumRentTarget" name="enumRentTarget" class="ga-select form-control">
+                <option selected="" value="">**Confirme o tamanho * * *</option>
+                <option value="PP">PP -> de 1 a 5m</option>
+                <option value="P">P -> de 5 a 10m</option>
+                <option value="M">M -> de 10 a 15m</option>
+                <option value="G">G -> de 15 a 20m</option>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-12">
+              <div class="form-check">
+                <input type="hidden" name="receiveInformation" id="receiveInformation-hidden" value="Não">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" name="receiveInformationCheck"
+                    id="receiveInformation">
+                  <label class="form-check-label" for="receiveInformation">
+                    Eu aceito receber informações e promoções da Big Storage por email, Whatsapp,
+                    SMS e/ou telefone. *
+                  </label>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-12 text-left">
+              <small>* Obrigatório</small>
+            </div>
+          </div>
+        </form>
+
+        </section>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="submit" form="home" class="btn-cta-blue"
+          onclick="return recaptchaSubmit(event, 'home', function () { submitFormModalV2(null, 'home'); });">
+          Enviar
+        </button>
+      </div>
+      </section>
+    </div>
+
+    <h4 style="text-align:center;">Saiba o espaço ideal para a sua necessidade e pague apenas pela metragem que
+      realmente precisa.</h4>
+
+  </div>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 30px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="Imagens/deposito 1 pessoal.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="col-md-6">
+            <h3>Unidade de Armazenamento Pessoal</h3>
+            <p>Essas unidades são projetadas para atender às necessidades de armazenamento de indivíduos. Elas são
+              ideais para guardar móveis, eletrodomésticos, caixas de itens pessoais, equipamentos esportivos, e
+              outros pertences durante uma mudança, reforma, ou apenas para liberar espaços em casa. As unidades de
+              armazenamento pessoal geralmente vêm em diferentes tamanhos, permitindo que os clientes escolham o
+              espaço que melhor atende às suas necessidades.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="Imagens/deposito 3 comercial.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="col-md-6">
+            <h3>Unidade de Armazenamento Comercial</h3>
+            <p>Essas unidades são maiores e destinadas a atender às necessidades de armazenamento de empresas e
+              comerciantes. Elas são perfeitas para armazenar inventário, arquivos, equipamentos, móveis de
+              escritório, e outros materiais comerciais. As unidades comerciais também podem oferecer recursos como
+              prateleiras e acesso a veículos para facilitar a carga e descarga de itens grandes ou pesados.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="Imagens/deposito 2 climatizado.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="col-md-6">
+            <h3>Unidade de Armazenamento Climatizado</h3>
+            <p>As unidades climatizadas são projetadas para manter uma temperatura e umidade controladas,
+              proporcionando o ambiente ideal para itens sensíveis ao clima, como vinhos, obra de arte, instrumentos
+              musicais, documentos importantes e eletrônicos. Essas unidades ajudam a proteger os itens armazenados de
+              danos causados por temperaturas estremas ou umidade excessiva.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+  <div class="container" id="depoimentos" alt="Sobre Nós" id="aboutus" style="text-align: center; margin-bottom: 40px;">
+    <h2>Conte conosco</h2>
+    <p style="text-align: left; text-indent: 50px;">Temos atendentes empenhados em oferecer o melhor serviço para os
+      nossos clientes.
+      Sempre sanando as dúvidas e ajudando até a fazer os cálculos para que nossos clientes adquiram ssó o que querem e
+      o que realmente precisam. Ajudando assim a economizar também.
+    </p>
+  </div>
+  <div class="container" alt="Depoimentos" style="margin-top: 30px; text-align: center;">
+    <h2>Depoimentos</h2>
+    <h4>Entregar a melhor experiência para nossos clientes é a nossa maior satisfação! </h4>
+    <h5 style="text-align: left;">Veja alguns relatos:</h5>
+    <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="Imagens/empresaria.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-6">
+              <p>"Eu precisava de mais espaço para organizar minha empresa e encontrei a solução perfeita no site de
+                self
+                storage. Agora, com tudo guardado de forma segura, consigo focar no crescimento do meu negócio. O
+                serviço é
+                impecável, e a tranquilidade que tenho ao usar o self storage é incrível!"
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="Imagens/estudante 28 anos.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-6">
+              <p>"Morando em um apartamento pequeno, sempre enfrentei problemas de falta de espaço. O self storage foi a
+                melhor descoberta! Posso guardar meus pertences extras de forma acessível e segura. Recomendo a todos
+                que,
+                como eu, precisam de mais espaço na vida!"
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="Imagens/dona de casa.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-6">
+              <p>"Optei pelo self storage para liberar espaço em casa e foi a melhor escolha. Agora, tenho mais conforto
+                e
+                organização. O processo de contratação foi fácil, o local é seguro, e a equipe é super atenciosa.
+                Recomendo
+                a todos que buscam praticidade e espaço extra!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div alt="Contato e Localização" class="row"
+    style="justify-content: space-around; background-color:rgba(255, 255, 255, 0.158); padding: 5px; width: 102%; margin-bottom: 30px; margin-top: 30px;"
+    id="localizacao">
+    <h2 style="text-align: center;">Contato e Localização</h2>
+    <div class="row" style="display: flexbox;">
+      <div class="col-md-3" id="textContatoLocalizacao">
+        <div>
+          <p><b>Endereço: </b><br><span></span>Rua dos Alfeneiros, 9<sub>3/4</sub><a href="https://maps.app.goo.gl/3GYq4sjisJZ8XKZ19" style="color: rgb(38, 0, 255);"> ->(maps)</a></span></p>
+          <p><b>Telefone: </b><br><span>+55 11 973 535 003</span></p>
+          <p><b>E-mail: </b><br><span>contato@bigstorage.com</span></p>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3668.672701049688!2d-47.3258508!3d-23.1456358!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf537d413faabd%3A0x1ed2ce3520480ca4!2sSenac%20Salto!5e0!3m2!1spt-BR!2sbr!4v1699300366474!5m2!1spt-BR!2sbr"
+          width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div alt="Rodapé" style="text-align: center; margin-bottom: 15px;" class="row">
+
+    <p>Big Storage<sup>&copy;</sup> 2023 - Todos os direitos reservados.</p>
+
+
+  </div>
+
+
+</body>
+
+</html>
