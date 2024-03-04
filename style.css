@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.job {
+    margin: 8px;
+    width: 20%;
+    height: 100px;
+    background-color: #cccccc;
+    float: left;
+}
+
+header,
+footer {
+    padding: 20px;
+    width: 82%;
+    clear: both;
+}
+
+aside {
+    padding: 18px;
+    float: left;
+    width: 20%;
+    align-items: center;
+}
+
+nav {
+    text-align: right;
+    padding-top: 4px;
+    margin: 12px;
+}
+
+main {
+    float: left;
+    width: 60%;
+}
+
+h1 {
+   text-align: center;
+}
+
+h2 {
+    text-align: center;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+h3 {
+    border-top: dashed;
+    padding-top: 16px;
+
+}
+
+#foto {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+
+}
+
+.destaque-vermelho {
+    color: red;
+    font-style: italic;
+    padding-top: 12px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+}
